@@ -1,0 +1,33 @@
+2018-08-09 16:15:19,696 testall.py  [line:501] 6160 DEBUG 18600227230
+2018-08-09 16:15:19,697 testall.py  [line:210] 6160 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-09 16:15:19,701 testall.py  [line:300] 6160 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-09 16:15:19,707 testall.py  [line:330] 6160 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (223 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-09 16:15:19,707 testall.py  [line:331] 6160 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-09 16:15:19,716 testall.py  [line:75] 6160 DEBUG post---------enter-------------
+2018-08-09 16:15:19,716 testall.py  [line:76] 6160 DEBUG 18600227230
+2018-08-09 16:15:19,725 connectionpool.py[line:205] 6160 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:15:19,984 connectionpool.py[line:393] 6160 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:15:19,985 testall.py  [line:53] 6160 DEBUG {'params': {'wait': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/220.wav'], 'retry': 0}, 'after_ignore_error': False, 'flowdata': '', 'after_action': 'start_asr', 'after_params': {'max_pause_ms': 600, 'filter_level': 0.5, 'threshold': 500, 'min_speak_ms': 100, 'recordpath': '', 'pause_play_ms': 2000, 'max_speak_ms': 10000, 'min_pause_ms': 300, 'volume': 50}, 'action': 'playback'}
+2018-08-09 16:15:19,985 testall.py  [line:514] 6160 DEBUG actrion:playback
+2018-08-09 16:15:19,985 testall.py  [line:166] 6160 DEBUG ['/home/galaxyeye/Downloads/GP/220.wav']
+2018-08-09 16:15:19,985 testall.py  [line:171] 6160 DEBUG 220.wav
+2018-08-09 16:15:19,985 testall.py  [line:172] 6160 DEBUG GP/220.wav
+2018-08-09 16:15:19,986 testall.py  [line:177] 6160 DEBUG ret:喂，您好！我是海顺证券的小黄，我们公司开展投资者服务月活动，免费为您提供个股咨询服务，您最近股票操作的怎么样？可以让我们的专业分析师帮你提供下参考呀
+2018-08-09 16:15:19,986 testall.py  [line:114] 6160 DEBUG post----------playback_result------------
+2018-08-09 16:15:19,988 connectionpool.py[line:205] 6160 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:15:20,001 connectionpool.py[line:393] 6160 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:15:20,001 testall.py  [line:53] 6160 DEBUG {'params': {'timeout': 100}, 'action': 'wait', 'flowdata': ''}
+2018-08-09 16:15:20,002 testall.py  [line:514] 6160 DEBUG actrion:wait
+2018-08-09 16:15:20,002 testall.py  [line:146] 6160 DEBUG post----------wait------------
+2018-08-09 16:15:20,003 connectionpool.py[line:205] 6160 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:15:21,018 connectionpool.py[line:393] 6160 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:15:21,019 testall.py  [line:53] 6160 DEBUG {'params': {'timeout': 9000}, 'action': 'wait', 'flowdata': ''}
+2018-08-09 16:15:21,019 testall.py  [line:514] 6160 DEBUG actrion:wait
+2018-08-09 16:15:25,043 testall.py  [line:131] 6160 DEBUG post----------leave------------
+2018-08-09 16:15:25,046 connectionpool.py[line:205] 6160 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:15:26,083 connectionpool.py[line:393] 6160 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:15:26,085 testall.py  [line:53] 6160 DEBUG {'params': {'timeout': 9000}, 'action': 'wait', 'flowdata': ''}
+2018-08-09 16:15:37,963 testall.py  [line:131] 6160 DEBUG post----------leave------------
+2018-08-09 16:15:37,965 connectionpool.py[line:205] 6160 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:15:39,006 connectionpool.py[line:393] 6160 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:15:39,007 testall.py  [line:53] 6160 DEBUG {'params': {'timeout': 9000}, 'action': 'wait', 'flowdata': ''}

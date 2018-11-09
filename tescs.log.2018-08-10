@@ -1,0 +1,189 @@
+2018-08-09 16:12:43,554 testall.py  [line:501] 9504 DEBUG 18600227230
+2018-08-09 16:12:43,556 testall.py  [line:210] 9504 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-09 16:12:43,561 testall.py  [line:300] 9504 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-09 16:12:43,621 testall.py  [line:330] 9504 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (222 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-09 16:12:43,624 testall.py  [line:331] 9504 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-09 16:12:43,638 testall.py  [line:75] 9504 DEBUG post---------enter-------------
+2018-08-09 16:12:43,639 testall.py  [line:76] 9504 DEBUG 18600227230
+2018-08-09 16:12:43,696 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:43,884 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:43,899 testall.py  [line:53] 9504 DEBUG {'params': {'retry': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/035.wav'], 'wait': 0}, 'after_params': {'pause_play_ms': 2000, 'max_speak_ms': 10000, 'max_pause_ms': 600, 'min_pause_ms': 300, 'threshold': 500, 'recordpath': '', 'min_speak_ms': 100, 'volume': 50, 'filter_level': 0.5}, 'action': 'playback', 'flowdata': '', 'after_ignore_error': False, 'after_action': 'start_asr'}
+2018-08-09 16:12:43,901 testall.py  [line:514] 9504 DEBUG actrion:playback
+2018-08-09 16:12:43,902 testall.py  [line:166] 9504 DEBUG ['/home/galaxyeye/Downloads/GP/035.wav']
+2018-08-09 16:12:43,903 testall.py  [line:171] 9504 DEBUG 035.wav
+2018-08-09 16:12:43,903 testall.py  [line:172] 9504 DEBUG GP/035.wav
+2018-08-09 16:12:43,907 testall.py  [line:177] 9504 DEBUG ret:您好！我是海顺证券的小黄，我们现在有三挡牛股免费赠送，您有意向了解一下吗？
+2018-08-09 16:12:43,908 testall.py  [line:114] 9504 DEBUG post----------playback_result------------
+2018-08-09 16:12:43,931 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:43,949 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:43,952 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 100}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:12:43,953 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:12:43,953 testall.py  [line:146] 9504 DEBUG post----------wait------------
+2018-08-09 16:12:43,967 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:44,985 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:44,992 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:12:44,994 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:12:54,027 testall.py  [line:91] 9504 DEBUG post----------asrmessage_notify------------
+2018-08-09 16:12:54,074 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:54,251 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:54,260 testall.py  [line:53] 9504 DEBUG {'params': {'retry': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/038.wav'], 'allow_interrupt': 2500, 'wait': 0}, 'flowdata': '', 'action': 'playback'}
+2018-08-09 16:12:54,262 testall.py  [line:514] 9504 DEBUG actrion:playback
+2018-08-09 16:12:54,263 testall.py  [line:166] 9504 DEBUG ['/home/galaxyeye/Downloads/GP/038.wav']
+2018-08-09 16:12:54,264 testall.py  [line:171] 9504 DEBUG 038.wav
+2018-08-09 16:12:54,266 testall.py  [line:172] 9504 DEBUG GP/038.wav
+2018-08-09 16:12:54,271 testall.py  [line:177] 9504 DEBUG ret:那稍后呢我添加一下您微信，通过微信的方式发送给您，我们这里呢除了给您提供免费赠送牛股服务外，我们还可以免费提供盘中的实时策略分析以及免费的个股诊断给您，这个对您来说做股票肯定是有帮助的！
+2018-08-09 16:12:54,273 testall.py  [line:114] 9504 DEBUG post----------playback_result------------
+2018-08-09 16:12:54,294 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:54,313 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:54,317 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 100}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:12:54,318 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:12:54,318 testall.py  [line:146] 9504 DEBUG post----------wait------------
+2018-08-09 16:12:54,334 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:55,357 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:55,369 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:12:55,370 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:12:58,705 testall.py  [line:91] 9504 DEBUG post----------asrmessage_notify------------
+2018-08-09 16:12:58,740 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:58,896 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:58,906 testall.py  [line:53] 9504 DEBUG {'params': {'retry': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/134.wav'], 'allow_interrupt': 2500, 'wait': 0}, 'flowdata': '', 'action': 'playback'}
+2018-08-09 16:12:58,907 testall.py  [line:514] 9504 DEBUG actrion:playback
+2018-08-09 16:12:58,908 testall.py  [line:166] 9504 DEBUG ['/home/galaxyeye/Downloads/GP/134.wav']
+2018-08-09 16:12:58,910 testall.py  [line:171] 9504 DEBUG 134.wav
+2018-08-09 16:12:58,911 testall.py  [line:172] 9504 DEBUG GP/134.wav
+2018-08-09 16:12:58,916 testall.py  [line:177] 9504 DEBUG ret:我们海顺成立于1997年，20年品牌，实缴注册资本金5000万元，曾经给上市公司维科精华做过重组的财务顾问，在全国排名前20，获得私募基金的最高评级，论专业我们是顶尖的，你要不要再了解了解？
+2018-08-09 16:12:58,917 testall.py  [line:114] 9504 DEBUG post----------playback_result------------
+2018-08-09 16:12:58,952 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:12:58,975 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:12:58,978 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 100}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:12:58,979 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:12:58,979 testall.py  [line:146] 9504 DEBUG post----------wait------------
+2018-08-09 16:12:58,993 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:00,012 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:00,021 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:13:00,023 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:13:02,009 testall.py  [line:91] 9504 DEBUG post----------asrmessage_notify------------
+2018-08-09 16:13:02,048 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:02,182 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:02,195 testall.py  [line:53] 9504 DEBUG {'params': {'retry': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/051.wav'], 'allow_interrupt': 2500, 'wait': 0}, 'flowdata': '', 'action': 'playback'}
+2018-08-09 16:13:02,198 testall.py  [line:514] 9504 DEBUG actrion:playback
+2018-08-09 16:13:02,200 testall.py  [line:166] 9504 DEBUG ['/home/galaxyeye/Downloads/GP/051.wav']
+2018-08-09 16:13:02,201 testall.py  [line:171] 9504 DEBUG 051.wav
+2018-08-09 16:13:02,202 testall.py  [line:172] 9504 DEBUG GP/051.wav
+2018-08-09 16:13:02,207 testall.py  [line:177] 9504 DEBUG ret:那谢谢您的接听了，祝您生活愉快，再见。
+2018-08-09 16:13:02,208 testall.py  [line:114] 9504 DEBUG post----------playback_result------------
+2018-08-09 16:13:02,234 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:02,250 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:02,253 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 100}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:13:02,254 testall.py  [line:514] 9504 DEBUG actrion:wait
+2018-08-09 16:13:02,254 testall.py  [line:146] 9504 DEBUG post----------wait------------
+2018-08-09 16:13:02,268 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:02,327 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:02,341 testall.py  [line:53] 9504 DEBUG {'params': {'usermsg': '', 'cause': 0}, 'action': 'hangup'}
+2018-08-09 16:13:02,343 testall.py  [line:514] 9504 DEBUG actrion:hangup
+2018-08-09 16:13:02,345 testall.py  [line:131] 9504 DEBUG post----------leave------------
+2018-08-09 16:13:02,378 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:03,411 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:03,425 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-09 16:13:45,861 testall.py  [line:131] 9504 DEBUG post----------leave------------
+2018-08-09 16:13:45,877 connectionpool.py[line:205] 9504 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-09 16:13:46,919 connectionpool.py[line:393] 9504 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-09 16:13:46,932 testall.py  [line:53] 9504 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-10 10:21:56,371 testall.py  [line:300] 12608 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:21:56,391 testall.py  [line:330] 12608 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (239 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:21:56,393 testall.py  [line:331] 12608 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:23:40,765 testall.py  [line:301] 9208 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:23:40,778 testall.py  [line:331] 9208 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (240 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:23:40,779 testall.py  [line:332] 9208 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:31:18,854 testall.py  [line:301] 6976 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:31:18,874 testall.py  [line:331] 6976 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (241 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:31:18,877 testall.py  [line:332] 6976 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:52:58,380 testall.py  [line:301] 11444 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:52:58,387 testall.py  [line:331] 11444 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (250 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:52:58,388 testall.py  [line:332] 11444 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:52:59,076 testall.py  [line:301] 11444 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:52:59,095 testall.py  [line:331] 11444 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (251 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:52:59,098 testall.py  [line:332] 11444 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:59:51,369 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 10:59:51,377 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 10:59:57,300 testall.py  [line:304] 10720 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 10:59:57,310 testall.py  [line:292] 10720 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-10 10:59:57,317 testall.py  [line:334] 10720 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (256 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 10:59:57,319 testall.py  [line:335] 10720 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 10:59:58,415 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 10:59:58,417 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:07,322 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:07,328 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:08,956 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:08,963 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:10,586 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:10,593 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:11,778 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:11,783 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:12,986 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:12,994 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:14,164 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:14,171 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:15,493 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:15,501 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:17,813 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:17,819 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:21,480 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:21,488 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:23,415 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:23,422 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:24,698 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:24,705 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:25,877 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:25,883 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:27,093 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:27,099 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:00:28,061 testall.py  [line:255] 10720 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:00:28,069 testall.py  [line:277] 10720 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:01:54,699 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:01:54,705 testall.py  [line:265] 10532 DEBUG 它完了
+2018-08-10 11:01:54,707 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:01:54,713 testall.py  [line:288] 10532 DEBUG 打完了,你懂得
+2018-08-10 11:02:00,960 testall.py  [line:307] 10532 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-10 11:02:00,974 testall.py  [line:295] 10532 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-10 11:02:00,982 testall.py  [line:337] 10532 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (259 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-10 11:02:00,984 testall.py  [line:338] 10532 DEBUG INSERT INTO sharedata.tb_task                 VALUES (20 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '8888', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 1;                
+2018-08-10 11:02:20,077 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:20,080 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:20,081 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:20,084 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:22,647 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:22,654 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:22,655 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:22,661 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:26,091 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:26,097 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:26,099 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:26,105 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:27,424 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:27,431 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:27,432 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:27,438 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:31,080 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:31,087 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:31,089 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:31,095 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:32,500 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:32,507 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:32,508 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:32,514 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:33,813 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:33,820 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:33,822 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:33,828 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:35,315 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:35,322 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:35,324 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:35,332 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:36,817 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:36,824 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:36,826 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:36,834 testall.py  [line:288] 10532 DEBUG 正在打,你说话
+2018-08-10 11:02:47,053 testall.py  [line:255] 10532 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-10 11:02:47,057 testall.py  [line:265] 10532 DEBUG 它在跑
+2018-08-10 11:02:47,058 testall.py  [line:279] 10532 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-10 11:02:47,061 testall.py  [line:288] 10532 DEBUG 正在打,你说话

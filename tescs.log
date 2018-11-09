@@ -1,0 +1,25 @@
+2018-09-14 16:42:14,655 connection.py[line:168] 10368 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-09-14 16:42:14,705 connection.py[line:232] 10368 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-09-14 16:42:14,728 pool.py     [line:81] 10368 DEBUG Add item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:43:03,607 testall.py  [line:304] 10368 DEBUG 18801784833---留学呼叫系统
+2018-09-14 16:43:03,630 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:43:03,641 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:43:03,642 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:43:03,652 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:43:03,653 testall.py  [line:292] 10368 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '留学呼叫系统';
+2018-09-14 16:43:03,655 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:43:03,664 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:43:03,665 testall.py  [line:333] 10368 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (883 , 'TK18801784833', 'user0001', NULL ,NULL , '18801784833', 0, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-09-14 16:43:03,666 testall.py  [line:334] 10368 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18801784833', 'user0001', 'aaa',null, 'aaa', null,null, 1, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0068',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0068', task_status = 1;                
+2018-09-14 16:43:03,668 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:43:03,688 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:47:17,756 testall.py  [line:252] 10368 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18801784833';            
+2018-09-14 16:47:17,760 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:47:17,772 testall.py  [line:258] 10368 DEBUG 
+2018-09-14 16:47:17,778 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:47:17,780 testall.py  [line:263] 10368 DEBUG 它在跑
+2018-09-14 16:47:17,782 testall.py  [line:276] 10368 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18801784833';            
+2018-09-14 16:47:17,784 pool.py     [line:109] 10368 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=0>"
+2018-09-14 16:47:17,793 testall.py  [line:282] 10368 DEBUG 
+2018-09-14 16:47:17,797 pool.py     [line:94] 10368 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046422B0>", current size is "<max=10, current=1, free=1>"
+2018-09-14 16:47:17,798 testall.py  [line:286] 10368 DEBUG more

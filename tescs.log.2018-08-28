@@ -1,0 +1,345 @@
+2018-08-28 16:57:13,496 connection.py[line:168] 15464 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-28 16:57:13,536 connection.py[line:232] 15464 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-28 16:57:13,558 pool.py     [line:81] 15464 DEBUG Add item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,836 testall.py  [line:500] 15464 DEBUG 18600227230
+2018-08-28 16:57:22,838 testall.py  [line:211] 15464 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 16:57:22,840 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:57:22,849 testall.py  [line:216] 15464 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 16:57:22,853 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,855 testall.py  [line:304] 15464 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 16:57:22,865 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:57:22,875 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,877 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:57:22,887 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,888 testall.py  [line:292] 15464 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 16:57:22,889 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:57:22,899 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,900 testall.py  [line:333] 15464 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (724 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 16:57:22,901 testall.py  [line:334] 15464 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 16:57:22,902 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:57:22,917 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:57:22,919 testall.py  [line:80] 15464 DEBUG post---------enter-------------
+2018-08-28 16:57:22,920 testall.py  [line:81] 15464 DEBUG 18600227230
+2018-08-28 16:57:22,984 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:57:24,010 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:57:24,015 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'noop', 'params': {'usermsg': ''}}
+2018-08-28 16:57:24,016 testall.py  [line:513] 15464 DEBUG actrion:noop
+2018-08-28 16:59:10,840 testall.py  [line:136] 15464 DEBUG post----------leave------------
+2018-08-28 16:59:10,888 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:11,958 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:11,967 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'wait', 'params': {'timeout': 9000}}
+2018-08-28 16:59:12,920 testall.py  [line:500] 15464 DEBUG 18600227230
+2018-08-28 16:59:12,921 testall.py  [line:211] 15464 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 16:59:12,923 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:12,928 testall.py  [line:216] 15464 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 16:59:12,931 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:12,932 testall.py  [line:304] 15464 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 16:59:12,933 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:12,942 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:12,944 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:12,953 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:12,954 testall.py  [line:292] 15464 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 16:59:12,955 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:12,964 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:12,965 testall.py  [line:333] 15464 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (725 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 16:59:12,966 testall.py  [line:334] 15464 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 16:59:12,967 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:12,981 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:12,982 testall.py  [line:80] 15464 DEBUG post---------enter-------------
+2018-08-28 16:59:12,983 testall.py  [line:81] 15464 DEBUG 18600227230
+2018-08-28 16:59:13,010 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:13,269 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:13,280 testall.py  [line:58] 15464 DEBUG {'after_params': {'volume': 50, 'max_pause_ms': 600, 'min_speak_ms': 100, 'filter_level': 0.5, 'min_pause_ms': 300, 'max_speak_ms': 10000, 'pause_play_ms': 2000, 'recordpath': '', 'threshold': 500}, 'flowdata': '', 'after_action': 'start_asr', 'action': 'playback', 'after_ignore_error': False, 'params': {'prompt': ['/home/galaxyeye/Downloads/GP/028.wav'], 'wait': 0, 'retry': 0}}
+2018-08-28 16:59:13,290 testall.py  [line:513] 15464 DEBUG actrion:playback
+2018-08-28 16:59:13,291 testall.py  [line:171] 15464 DEBUG ['/home/galaxyeye/Downloads/GP/028.wav']
+2018-08-28 16:59:13,292 testall.py  [line:176] 15464 DEBUG 028.wav
+2018-08-28 16:59:13,293 testall.py  [line:177] 15464 DEBUG GP/028.wav
+2018-08-28 16:59:13,294 pool.py     [line:109] 15464 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=0>"
+2018-08-28 16:59:13,303 pool.py     [line:94] 15464 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045A2240>", current size is "<max=10, current=1, free=1>"
+2018-08-28 16:59:13,304 testall.py  [line:182] 15464 DEBUG ret:您好！我是海顺证券的小黄，我们有三只短线牛股赠送，您可以跟踪关注一下，做一个参考，我们每天都会通过微信方式推送给您，您微信方便接收吗？
+2018-08-28 16:59:14,315 testall.py  [line:119] 15464 DEBUG post----------playback_result------------
+2018-08-28 16:59:14,371 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:14,402 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:14,406 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'wait', 'params': {'timeout': 100}}
+2018-08-28 16:59:14,407 testall.py  [line:513] 15464 DEBUG actrion:wait
+2018-08-28 16:59:14,408 testall.py  [line:151] 15464 DEBUG post----------wait------------
+2018-08-28 16:59:14,429 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:15,455 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:15,468 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'wait', 'params': {'timeout': 9000}}
+2018-08-28 16:59:15,471 testall.py  [line:513] 15464 DEBUG actrion:wait
+2018-08-28 16:59:18,446 testall.py  [line:136] 15464 DEBUG post----------leave------------
+2018-08-28 16:59:18,470 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:19,507 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:19,515 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'wait', 'params': {'timeout': 9000}}
+2018-08-28 16:59:28,144 testall.py  [line:136] 15464 DEBUG post----------leave------------
+2018-08-28 16:59:28,186 connectionpool.py[line:205] 15464 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 16:59:29,218 connectionpool.py[line:393] 15464 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 16:59:29,224 testall.py  [line:58] 15464 DEBUG {'flowdata': '', 'action': 'noop', 'params': {'usermsg': ''}}
+2018-08-28 17:03:33,051 connection.py[line:168] 7056 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-28 17:03:33,076 connection.py[line:232] 7056 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-28 17:03:33,099 pool.py     [line:81] 7056 DEBUG Add item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,703 testall.py  [line:500] 7056 DEBUG 18600227230
+2018-08-28 17:03:38,704 testall.py  [line:211] 7056 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:03:38,705 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:38,712 testall.py  [line:216] 7056 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:03:38,715 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,716 testall.py  [line:304] 7056 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:03:38,717 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:38,726 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,727 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:38,735 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,735 testall.py  [line:292] 7056 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:03:38,736 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:38,743 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,743 testall.py  [line:333] 7056 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (728 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:03:38,744 testall.py  [line:334] 7056 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:03:38,745 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:38,756 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:38,757 testall.py  [line:80] 7056 DEBUG post---------enter-------------
+2018-08-28 17:03:38,757 testall.py  [line:81] 7056 DEBUG 18600227230
+2018-08-28 17:03:38,781 connectionpool.py[line:205] 7056 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:03:39,044 connectionpool.py[line:393] 7056 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:03:39,053 testall.py  [line:58] 7056 DEBUG {'after_params': {'max_pause_ms': 600, 'pause_play_ms': 2000, 'min_pause_ms': 300, 'recordpath': '', 'threshold': 500, 'filter_level': 0.5, 'volume': 50, 'min_speak_ms': 100, 'max_speak_ms': 10000}, 'params': {'wait': 0, 'retry': 0, 'prompt': ['/home/galaxyeye/Downloads/GP/035.wav']}, 'after_action': 'start_asr', 'after_ignore_error': False, 'flowdata': '', 'action': 'playback'}
+2018-08-28 17:03:39,055 testall.py  [line:513] 7056 DEBUG actrion:playback
+2018-08-28 17:03:39,056 testall.py  [line:171] 7056 DEBUG ['/home/galaxyeye/Downloads/GP/035.wav']
+2018-08-28 17:03:39,057 testall.py  [line:176] 7056 DEBUG 035.wav
+2018-08-28 17:03:39,059 testall.py  [line:177] 7056 DEBUG GP/035.wav
+2018-08-28 17:03:39,060 pool.py     [line:109] 7056 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:03:39,071 pool.py     [line:94] 7056 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000046312B0>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:03:39,073 testall.py  [line:182] 7056 DEBUG ret:您好！我是海顺证券的小黄，我们现在有三挡牛股免费赠送，您有意向了解一下吗？
+2018-08-28 17:03:40,074 testall.py  [line:119] 7056 DEBUG post----------playback_result------------
+2018-08-28 17:03:40,116 connectionpool.py[line:205] 7056 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:03:40,141 connectionpool.py[line:393] 7056 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:03:40,147 testall.py  [line:58] 7056 DEBUG {'params': {'timeout': 100}, 'flowdata': '', 'action': 'wait'}
+2018-08-28 17:03:40,148 testall.py  [line:513] 7056 DEBUG actrion:wait
+2018-08-28 17:03:40,149 testall.py  [line:151] 7056 DEBUG post----------wait------------
+2018-08-28 17:03:40,172 connectionpool.py[line:205] 7056 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:03:41,190 connectionpool.py[line:393] 7056 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:03:41,194 testall.py  [line:58] 7056 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-28 17:03:41,195 testall.py  [line:513] 7056 DEBUG actrion:wait
+2018-08-28 17:03:43,619 testall.py  [line:136] 7056 DEBUG post----------leave------------
+2018-08-28 17:03:43,644 connectionpool.py[line:205] 7056 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:03:44,683 connectionpool.py[line:393] 7056 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:03:44,689 testall.py  [line:58] 7056 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-28 17:03:58,092 testall.py  [line:136] 7056 DEBUG post----------leave------------
+2018-08-28 17:03:58,115 connectionpool.py[line:205] 7056 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:03:59,157 connectionpool.py[line:393] 7056 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:03:59,167 testall.py  [line:58] 7056 DEBUG {'params': {'timeout': 9000}, 'flowdata': '', 'action': 'wait'}
+2018-08-28 17:14:15,594 connection.py[line:168] 12300 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-28 17:14:15,610 connection.py[line:232] 12300 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-28 17:14:15,635 pool.py     [line:81] 12300 DEBUG Add item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,031 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:14:23,033 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:14:23,036 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:14:23,044 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:14:23,047 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,049 testall.py  [line:304] 12300 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:14:23,051 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:14:23,062 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,064 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:14:23,074 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,074 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:14:23,075 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:14:23,083 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,084 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (737 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:14:23,085 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:14:23,086 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:14:23,100 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:14:23,100 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:14:23,101 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:14:23,135 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:14:23,154 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:14:23,157 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'usermsg': ''}, 'action': 'noop'}
+2018-08-28 17:14:23,158 testall.py  [line:513] 12300 DEBUG actrion:noop
+2018-08-28 17:16:38,238 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:16:38,259 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:16:39,309 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:16:39,313 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:16:39,949 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:16:39,951 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:16:39,952 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:39,959 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:16:39,963 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:39,964 testall.py  [line:304] 12300 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:16:39,966 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:39,976 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:39,978 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:39,988 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:39,990 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:16:39,991 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:39,999 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:40,000 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (738 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:16:40,000 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:16:40,001 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:40,013 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:40,014 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:16:40,015 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:16:40,033 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:16:40,245 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:16:40,258 testall.py  [line:58] 12300 DEBUG {'action': 'playback', 'flowdata': '', 'params': {'prompt': ['/home/galaxyeye/Downloads/GP/230.wav'], 'wait': 0, 'retry': 0}, 'after_ignore_error': False, 'after_params': {'max_pause_ms': 600, 'max_speak_ms': 10000, 'volume': 50, 'recordpath': '', 'min_speak_ms': 100, 'pause_play_ms': 2000, 'filter_level': 0.5, 'threshold': 500, 'min_pause_ms': 300}, 'after_action': 'start_asr'}
+2018-08-28 17:16:40,260 testall.py  [line:513] 12300 DEBUG actrion:playback
+2018-08-28 17:16:40,262 testall.py  [line:171] 12300 DEBUG ['/home/galaxyeye/Downloads/GP/230.wav']
+2018-08-28 17:16:40,263 testall.py  [line:176] 12300 DEBUG 230.wav
+2018-08-28 17:16:40,264 testall.py  [line:177] 12300 DEBUG GP/230.wav
+2018-08-28 17:16:40,265 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:16:40,275 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:16:40,277 testall.py  [line:182] 12300 DEBUG ret:喂，您好！我是海顺证券公司的，我姓黄，我们海顺证券成立20周年，举行投资者服务月活动，可以每天分享给您两只研究所最新研究的牛股，目前是免费的，您有在做股票的话可以关注下。
+2018-08-28 17:16:41,288 testall.py  [line:119] 12300 DEBUG post----------playback_result------------
+2018-08-28 17:16:41,310 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:16:41,327 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:16:41,331 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 100}, 'action': 'wait'}
+2018-08-28 17:16:41,331 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:16:41,332 testall.py  [line:151] 12300 DEBUG post----------wait------------
+2018-08-28 17:16:41,344 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:16:42,365 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:16:42,378 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:16:42,380 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:17:13,655 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:17:13,676 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:17:14,710 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:17:14,719 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:17:16,806 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:17:16,807 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:17:16,808 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:17:16,815 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:17:16,818 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:17:16,819 testall.py  [line:304] 12300 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:17:16,821 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:17:16,829 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:17:16,831 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:17:16,837 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:17:16,837 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:17:16,838 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:17:16,844 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:17:16,844 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (739 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:17:16,845 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:17:16,845 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:17:16,856 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:17:16,857 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:17:16,857 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:17:16,871 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:17:17,900 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:17:17,905 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'usermsg': ''}, 'action': 'noop'}
+2018-08-28 17:17:17,907 testall.py  [line:513] 12300 DEBUG actrion:noop
+2018-08-28 17:21:22,179 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:21:22,203 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:21:23,253 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:21:23,262 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:21:32,886 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:21:32,888 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:21:32,889 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:21:32,895 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:21:32,899 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:21:32,900 testall.py  [line:304] 12300 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:21:32,901 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:21:32,911 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:21:32,912 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:21:32,922 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:21:32,923 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:21:32,925 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:21:32,934 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:21:32,936 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (741 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:21:32,937 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:21:32,938 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:21:32,950 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:21:32,951 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:21:32,951 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:21:32,970 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:21:34,010 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:21:34,019 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:21:34,021 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:21:57,939 testall.py  [line:151] 12300 DEBUG post----------wait------------
+2018-08-28 17:21:57,973 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:21:58,996 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:21:59,003 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:21:59,004 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:22:00,520 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:22:00,549 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:22:01,588 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:22:01,596 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:25:34,043 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:25:34,044 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:25:34,046 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,053 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:25:34,057 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,058 testall.py  [line:304] 12300 DEBUG 18600227230---股票呼叫系统黄婷
+2018-08-28 17:25:34,061 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,072 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,074 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,086 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,087 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '股票呼叫系统黄婷';
+2018-08-28 17:25:34,089 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,101 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,102 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (742 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:25:34,104 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0007',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0007', task_status = 10;                
+2018-08-28 17:25:34,105 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,120 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,121 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:25:34,122 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:25:34,142 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:25:34,410 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:25:34,419 testall.py  [line:58] 12300 DEBUG {'action': 'playback', 'flowdata': '', 'params': {'prompt': ['/home/galaxyeye/Downloads/GP/028.wav'], 'wait': 0, 'retry': 0}, 'after_ignore_error': False, 'after_params': {'max_pause_ms': 600, 'max_speak_ms': 10000, 'volume': 50, 'recordpath': '', 'min_speak_ms': 100, 'pause_play_ms': 2000, 'filter_level': 0.5, 'threshold': 500, 'min_pause_ms': 300}, 'after_action': 'start_asr'}
+2018-08-28 17:25:34,420 testall.py  [line:513] 12300 DEBUG actrion:playback
+2018-08-28 17:25:34,421 testall.py  [line:171] 12300 DEBUG ['/home/galaxyeye/Downloads/GP/028.wav']
+2018-08-28 17:25:34,423 testall.py  [line:176] 12300 DEBUG 028.wav
+2018-08-28 17:25:34,424 testall.py  [line:177] 12300 DEBUG GP/028.wav
+2018-08-28 17:25:34,426 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:25:34,436 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:25:34,438 testall.py  [line:182] 12300 DEBUG ret:您好！我是海顺证券的小黄，我们有三只短线牛股赠送，您可以跟踪关注一下，做一个参考，我们每天都会通过微信方式推送给您，您微信方便接收吗？
+2018-08-28 17:25:35,440 testall.py  [line:119] 12300 DEBUG post----------playback_result------------
+2018-08-28 17:25:35,486 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:25:35,516 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:25:35,521 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 100}, 'action': 'wait'}
+2018-08-28 17:25:35,522 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:25:35,523 testall.py  [line:151] 12300 DEBUG post----------wait------------
+2018-08-28 17:25:35,540 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:25:36,565 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:25:36,575 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:25:36,576 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:25:50,943 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:25:50,976 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:25:52,017 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:25:52,029 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:26:19,186 testall.py  [line:500] 12300 DEBUG 18600227230
+2018-08-28 17:26:19,188 testall.py  [line:211] 12300 DEBUG delete from tb_call_info where callid='2c4146f8-6afe-11e8-8cb2-18600227230'
+2018-08-28 17:26:19,189 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,196 testall.py  [line:216] 12300 ERROR (1146, "Table 'sharedata.tb_call_info' doesn't exist")
+2018-08-28 17:26:19,199 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,200 testall.py  [line:304] 12300 DEBUG 18600227230---招聘呼叫系统
+2018-08-28 17:26:19,201 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,208 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,209 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,216 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,216 testall.py  [line:292] 12300 DEBUG select vb_uuid from sharedata.tb_verbal where vb_content = '招聘呼叫系统';
+2018-08-28 17:26:19,217 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,224 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,225 testall.py  [line:333] 12300 DEBUG INSERT INTO sharedata.tb_callrecord             VALUES (743 , 'TK18600227230', 'user0001', NULL ,NULL , '18600227230', 2, now(3), 0, 0, NULL, NULL, NULL, NULL, '0', '0')            ;
+2018-08-28 17:26:19,225 testall.py  [line:334] 12300 DEBUG INSERT INTO sharedata.tb_task                 VALUES (22 , 'TK18600227230', 'user0001', 'aaa',null, 'aaa', null,null, 10, '2', '2', '2', '[00:00-03:00];',                'GOIP', 'GW00002', 'VB0070',null, '7777', 45)                ON DUPLICATE KEY UPDATE task_verbal='VB0070', task_status = 10;                
+2018-08-28 17:26:19,226 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,238 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,239 testall.py  [line:80] 12300 DEBUG post---------enter-------------
+2018-08-28 17:26:19,239 testall.py  [line:81] 12300 DEBUG 18600227230
+2018-08-28 17:26:19,256 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:26:19,334 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:26:19,337 testall.py  [line:58] 12300 DEBUG {'action': 'playback', 'flowdata': '', 'params': {'prompt': ['/home/galaxyeye/Downloads/ZP/001.wav'], 'wait': 0, 'retry': 0}, 'after_ignore_error': False, 'after_params': {'max_pause_ms': 600, 'max_speak_ms': 10000, 'volume': 50, 'recordpath': '', 'min_speak_ms': 100, 'pause_play_ms': 2000, 'filter_level': 0.5, 'threshold': 500, 'min_pause_ms': 300}, 'after_action': 'start_asr'}
+2018-08-28 17:26:19,338 testall.py  [line:513] 12300 DEBUG actrion:playback
+2018-08-28 17:26:19,338 testall.py  [line:171] 12300 DEBUG ['/home/galaxyeye/Downloads/ZP/001.wav']
+2018-08-28 17:26:19,339 testall.py  [line:176] 12300 DEBUG 001.wav
+2018-08-28 17:26:19,340 testall.py  [line:177] 12300 DEBUG ZP/001.wav
+2018-08-28 17:26:19,340 pool.py     [line:109] 12300 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=0>"
+2018-08-28 17:26:19,347 pool.py     [line:94] 12300 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004631320>", current size is "<max=10, current=1, free=1>"
+2018-08-28 17:26:19,348 testall.py  [line:182] 12300 DEBUG ret:哎，您好，我这边是xxx公司人事助理，请问您现在方便接电话吗
+2018-08-28 17:26:20,350 testall.py  [line:119] 12300 DEBUG post----------playback_result------------
+2018-08-28 17:26:20,364 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:26:20,381 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:26:20,384 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 100}, 'action': 'wait'}
+2018-08-28 17:26:20,385 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:26:20,386 testall.py  [line:151] 12300 DEBUG post----------wait------------
+2018-08-28 17:26:20,400 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:26:21,418 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:26:21,423 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}
+2018-08-28 17:26:21,424 testall.py  [line:513] 12300 DEBUG actrion:wait
+2018-08-28 17:26:32,897 testall.py  [line:136] 12300 DEBUG post----------leave------------
+2018-08-28 17:26:32,910 connectionpool.py[line:205] 12300 DEBUG Starting new HTTP connection (1): 172.16.0.9:8080
+2018-08-28 17:26:33,946 connectionpool.py[line:393] 12300 DEBUG http://172.16.0.9:8080 "POST /smartdemo/smatrIvr HTTP/1.1" 200 None
+2018-08-28 17:26:33,960 testall.py  [line:58] 12300 DEBUG {'flowdata': '', 'params': {'timeout': 9000}, 'action': 'wait'}

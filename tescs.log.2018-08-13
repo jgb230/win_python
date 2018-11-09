@@ -1,0 +1,116 @@
+2018-08-13 14:20:40,684 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:20:40,688 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:20:40,689 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:20:40,690 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:20:40,693 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:20:40,693 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:21:17,881 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:21:17,887 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:21:17,888 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:21:17,889 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:21:17,893 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:21:17,895 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:21:46,470 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:21:46,473 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:21:46,474 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:21:46,474 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:21:46,477 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:21:46,477 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:23:12,192 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:23:12,195 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:23:12,195 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:23:12,196 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:23:12,199 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:23:12,200 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:33:15,372 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:33:15,375 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:33:15,376 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:33:15,376 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:33:15,379 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:33:15,380 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:38:38,293 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:38:38,296 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:38:38,297 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:38:38,297 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:38:38,300 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:38:38,300 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 14:39:15,593 testall.py  [line:260] 9388 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 14:39:15,596 testall.py  [line:265] 9388 DEBUG 
+2018-08-13 14:39:15,597 testall.py  [line:272] 9388 DEBUG 它完了
+2018-08-13 14:39:15,598 testall.py  [line:286] 9388 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 14:39:15,602 testall.py  [line:291] 9388 DEBUG 
+2018-08-13 14:39:15,603 testall.py  [line:297] 9388 DEBUG 打完了,你懂得
+2018-08-13 15:52:41,536 connection.py[line:168] 11612 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-13 15:52:41,563 connection.py[line:232] 11612 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-13 15:52:41,588 pool.py     [line:81] 11612 DEBUG Add item "<pymysql.connections.Connection object at 0x00000000045A1278>", current size is "<max=10, current=1, free=1>"
+2018-08-13 15:52:49,036 testall.py  [line:252] 11612 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 15:53:33,937 connection.py[line:168] 14048 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-13 15:53:33,955 connection.py[line:232] 14048 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-13 15:53:33,979 pool.py     [line:81] 14048 DEBUG Add item "<pymysql.connections.Connection object at 0x00000000045BC198>", current size is "<max=10, current=1, free=1>"
+2018-08-13 15:53:40,688 testall.py  [line:252] 14048 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 15:53:40,689 pool.py     [line:109] 14048 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045BC198>", current size is "<max=10, current=1, free=0>"
+2018-08-13 15:53:40,694 testall.py  [line:258] 14048 DEBUG 
+2018-08-13 15:53:40,694 testall.py  [line:261] 14048 ERROR 0
+2018-08-13 15:53:40,696 pool.py     [line:94] 14048 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045BC198>", current size is "<max=10, current=1, free=1>"
+2018-08-13 15:53:40,697 testall.py  [line:263] 14048 DEBUG 
+2018-08-13 15:53:40,697 testall.py  [line:276] 14048 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 15:53:40,698 pool.py     [line:109] 14048 DEBUG Get item "<pymysql.connections.Connection object at 0x00000000045BC198>", current size is "<max=10, current=1, free=0>"
+2018-08-13 15:53:40,703 testall.py  [line:282] 14048 DEBUG 
+2018-08-13 15:53:40,704 testall.py  [line:285] 14048 ERROR 0
+2018-08-13 15:53:40,705 pool.py     [line:94] 14048 DEBUG Return item "<pymysql.connections.Connection object at 0x00000000045BC198>", current size is "<max=10, current=1, free=1>"
+2018-08-13 15:53:40,706 testall.py  [line:286] 14048 DEBUG 
+2018-08-13 16:01:18,916 connection.py[line:168] 11548 INFO [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Connect to connection pool
+2018-08-13 16:01:18,934 connection.py[line:232] 11548 DEBUG [<MySQLConnectionPool name='aicall', size='<boundary=10, max=10, current=0, free=0>'>] Adjust connection pool, current size is "<boundary=10, max=10, current=0, free=0>"
+2018-08-13 16:01:18,950 pool.py     [line:81] 11548 DEBUG Add item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:25,584 testall.py  [line:252] 11548 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 16:01:25,585 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:25,591 testall.py  [line:258] 11548 DEBUG 
+2018-08-13 16:01:25,594 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:25,595 testall.py  [line:263] 11548 DEBUG 它完了
+2018-08-13 16:01:25,596 testall.py  [line:276] 11548 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 16:01:25,597 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:25,603 testall.py  [line:282] 11548 DEBUG 
+2018-08-13 16:01:25,606 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:25,606 testall.py  [line:286] 11548 DEBUG 正在打,准备接
+2018-08-13 16:01:43,734 testall.py  [line:252] 11548 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 16:01:43,735 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:43,742 testall.py  [line:258] 11548 DEBUG 
+2018-08-13 16:01:43,745 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:43,746 testall.py  [line:263] 11548 DEBUG 它完了
+2018-08-13 16:01:43,746 testall.py  [line:276] 11548 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 16:01:43,748 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:43,755 testall.py  [line:282] 11548 DEBUG 
+2018-08-13 16:01:43,759 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:43,760 testall.py  [line:286] 11548 DEBUG more
+2018-08-13 16:01:56,331 testall.py  [line:252] 11548 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 16:01:56,332 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:56,337 testall.py  [line:258] 11548 DEBUG 
+2018-08-13 16:01:56,339 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:56,340 testall.py  [line:263] 11548 DEBUG 它完了
+2018-08-13 16:01:56,340 testall.py  [line:276] 11548 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 16:01:56,342 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:01:56,346 testall.py  [line:282] 11548 DEBUG 
+2018-08-13 16:01:56,348 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:01:56,349 testall.py  [line:286] 11548 DEBUG 正在打,你说话
+2018-08-13 16:02:18,669 testall.py  [line:252] 11548 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 16:02:18,670 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:02:18,677 testall.py  [line:258] 11548 DEBUG 
+2018-08-13 16:02:18,679 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:02:18,680 testall.py  [line:263] 11548 DEBUG 它完了
+2018-08-13 16:02:18,680 testall.py  [line:276] 11548 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 16:02:18,681 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:02:18,688 testall.py  [line:282] 11548 DEBUG 
+2018-08-13 16:02:18,690 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:02:18,691 testall.py  [line:286] 11548 DEBUG 打完了,你懂得
+2018-08-13 16:02:21,063 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:02:21,070 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:07:40,204 testall.py  [line:252] 11548 DEBUG select CASE task_status WHEN 1 THEN '它在跑'            WHEN 2 THEN '它停了'             WHEN 10 THEN '它完了'            ELSE 'more' END            as testCol from sharedata.tb_task where task_id='TK18600227230';            
+2018-08-13 16:07:40,205 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:07:40,210 testall.py  [line:258] 11548 DEBUG 
+2018-08-13 16:07:40,213 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:07:40,213 testall.py  [line:263] 11548 DEBUG 它完了
+2018-08-13 16:07:40,214 testall.py  [line:276] 11548 DEBUG select  CASE cr_status WHEN 0 THEN '还没打,别着急'            WHEN 2 THEN '正在打,准备接'             WHEN 3 THEN '正在打,你说话'             WHEN 10 THEN '打完了,你懂得'            WHEN 11 THEN '失败了,你看着办'            ELSE 'more' END            as testCol from sharedata.tb_callrecord where cr_mobile='18600227230';            
+2018-08-13 16:07:40,215 pool.py     [line:109] 11548 DEBUG Get item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=0>"
+2018-08-13 16:07:40,220 testall.py  [line:282] 11548 DEBUG 
+2018-08-13 16:07:40,222 pool.py     [line:94] 11548 DEBUG Return item "<pymysql.connections.Connection object at 0x0000000004621320>", current size is "<max=10, current=1, free=1>"
+2018-08-13 16:07:40,222 testall.py  [line:286] 11548 DEBUG 打完了,你懂得
