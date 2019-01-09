@@ -22,6 +22,7 @@ class utl:
         head.extend(self.char2bytes(self.version))
         head.extend(self.magic)
         head.extend(self.short2bytes(0))
+        print("==============",head)
         return head
 
     def int2bytes(self, num):

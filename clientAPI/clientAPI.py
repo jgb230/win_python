@@ -12,8 +12,8 @@ from utl import utl
 from RWLock import RWLock
 
 class GLClient:
-    def __init__(self, ip, port, appid, appkey, tp, version, magic):
-        if (appid == "" or appkey == ""):
+    def __init__(self, info):
+        if (len(info["app"]) == 0 or info["app"][0]["appid"] == "" or info["app"][0]["appkey"] == ""):
             print("appid empty or appkey empty")
             return
         self.m_instance = None
@@ -23,20 +23,17 @@ class GLClient:
 
         self.m_result = 0
         self.m_heartTime = 0
-        self.m_appid = appid
-        self.m_appkey = appkey
-        self.m_type = tp
-        self.util = utl(version, magic)
+        self.m_apps = info["app"]
+        self.util = utl(info["version"], info["magic"])
 
         self.m_rwLock = RWLock()
         self.m_loginId = {}
 
-        self.mysock = mySocket(self, ip, port)
+        self.mysock = mySocket(self, info["ip"], info["port"])
+        # 注册回调函数
+        self.instance = info["instance"]
+        self.function_name = info["function_name"]
 
-# 注册回调函数
-    def registerCallback(self,  instance, function_name):
-        self.instance = instance
-        self.function_name = function_name
 # 调用回调函数
     def callBack(self, param):
         self.instance.__getattribute__(self.function_name)(param)
@@ -205,7 +202,7 @@ class GLClient:
         l = 10 + len(sdata.encode('utf-8'))
         bs = bytes(self.util.head(l, commond))
         #print("head :",bs.hex())
-        print("send commond %3d %s"% (commond, sdata))
+        print("send commond %3d %s"% (commond, data))
         try:
             ret = self.mysock.send(bs + sdata.encode('utf-8'))
         except Exception  as e:
@@ -225,11 +222,11 @@ class GLClient:
             self.sendMsg(9999, data)
 
 # 发送服务器登录消息
-    def servLogin(self):
+    def servLogin(self, appid, tp):
         data = {}
         #print(int(time.time()))
-        data["servType"] = self.m_type
-        data["appid"] = self.m_appid
+        data["servType"] = tp
+        data["appid"] = appid
 
         ret = self.sendMsg(201, data)
 
@@ -249,8 +246,8 @@ class GLClient:
         return 0 if ret==1 else -1
 
 # 发送服务器验证消息    
-    def servAuth(self):
-        data = self.m_randomSeed + self.m_appkey
+    def servAuth(self, appid, appkey):
+        data = self.m_randomSeed + appkey
         m1 = hashlib.md5()
         m1.update(data.encode("utf-8"))
         sign = m1.hexdigest()
@@ -258,7 +255,7 @@ class GLClient:
         data = {}
         #print(int(time.time()))
         data["sign"] = sign
-        data["appid"] = self.m_appid
+        data["appid"] = appid
 
         ret = self.sendMsg(202, data)
         if (ret < 0):
@@ -277,12 +274,12 @@ class GLClient:
         return 0 if ret==1 else -1
 
 # 发送交互消息
-    def aichat(self, msg, uid):
+    def aichat(self, appid, msg, uid):
         data = {}
         #print(int(time.time()))
         data["uid"] = uid
         data["content"] = msg
-        data["appid"] = self.m_appid
+        data["appid"] = appid
 
         ret = self.sendMsg(801, data)
         if (ret < 0):
@@ -296,13 +293,13 @@ class GLClient:
         return 0
        
 # 发送用户登录消息
-    def login(self, proId, uid):
+    def login(self, appid, proId, uid):
         data = {}
         #print(int(time.time()))
         data["uname"] = proId
         data["passwd"] = ""
         data["keytp"] = "openid"
-        data["appid"] = self.m_appid
+        data["appid"] = appid
         data["seq"] = proId
 
         ret = self.sendMsg(2, data)
@@ -330,12 +327,12 @@ class GLClient:
             
         return 0
 # 发送用户登出消息
-    def logout(self, proId, uid):
+    def logout(self, appid, proId, uid):
 
         data = {}
         #print(int(time.time()))
         data["uid"] = uid
-        data["appid"] = self.m_appid
+        data["appid"] = appid
         data["seq"] = proId
         
         ret = self.sendMsg(4, data)
@@ -354,13 +351,18 @@ class GLClient:
         self.mysock.connect()
         print("connect success")
         self.starRecv()
-        ret = self.servLogin()
-        if (ret != 0):
-            print("servLogin error")
-            return -1
-        ret = self.servAuth()
-        if (ret != 0):
-            print("servAuth error")
-            return -1
+
+        for i in self.m_apps:
+            appid = i["appid"]
+            appkey = i["appkey"]
+            tp = i["type"]
+            ret = self.servLogin(appid, tp)
+            if (ret != 0):
+                print("servLogin error")
+                return -1
+            ret = self.servAuth(appid, appkey)
+            if (ret != 0):
+                print("servAuth error")
+                return -1
         return 0
     

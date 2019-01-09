@@ -50,11 +50,18 @@ class mySocket:
             try:
                 self.sock = socket.socket()
                 self.sock.connect((self.m_ip, self.m_port))
-                self.client.loginIdLock.acquire()
-                for proid in self.client.m_loginId.values():
-                    uid = []
-                    self.client.login(proid, uid)
-                self.client.loginIdLock.release()
+                for i in self.client.m_apps:
+                    appid = i["appid"]
+                    appkey = i["appkey"]
+                    tp = i["type"]
+                    ret = self.client.servLogin(appid, tp)
+                    if (ret != 0):
+                        print("servLogin error")
+                        return -1
+                    ret = self.client.servAuth(appid, appkey)
+                    if (ret != 0):
+                        print("servAuth error")
+                        return -1
                 break
             except Exception as e:
                 print("reconnect socket error %s"%(e))
